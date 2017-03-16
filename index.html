@@ -2,14 +2,14 @@
 Labyrinth generated with JavaScript:<br><br>
 <input type="button" onclick="drawLabryinth(60, 30, 2, 2);" value="Draw">
 <br><br>
-<div id="maze" style="width:600px;height:400px;overflow:none;">
+<div id="maze" style="width:800px;height:400px;overflow:none;margin:0 auto;">
 </div>            
 <script>
 function drawLabryinth(w,h,n,m) {
   var strMaze = "";
-  for (var line=1; line<60; line++) {
-    for(var i=1;i<h;i++) {
-      var s = (Math.floor((Math.random()*2)%2)) ? "╱" : "╲";
+  for (var line=1; line<h; line++) {
+    for(var i=1;i<w;i++) {
+      var s = (Math.floor((Math.random()*n)%m)) ? "╱" : "╲";
       strMaze += (s);
     }
     strMaze += "<br>";
