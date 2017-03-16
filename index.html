@@ -6,6 +6,7 @@ Labyrinth generated with JavaScript:<br><br>
 </div>            
 <script>
 function drawLabryinth(w,h,n,m) {
+  document.getElementById("maze").innerHTML = "";
   for (var line=1; line<60; line++) {
     for(var i=1;i<h;i++) {
       var s = (Math.floor((Math.random()*2)%2)) ? "╱" : "╲";
