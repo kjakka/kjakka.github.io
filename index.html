@@ -1,0 +1,14 @@
+<br>
+Labyrinth generated with JavaScript:<br><br>
+<input type="button" onclick="drawLabryinth(60, 60, 2, 2);">
+<script>
+function drawLabryinth(w,h,n,m) {
+  for (var line=1; line<60; line++) {
+    for(var i=1;i<42;i++) {
+      var s = (Math.floor((Math.random()*2)%2)) ? "╱" : "╲";
+      document.write(s);
+    }
+    document.writeln("<br>");
+  }
+}
+</script>
