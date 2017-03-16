@@ -1,0 +1,2 @@
+# kjakka.github.io
+default
